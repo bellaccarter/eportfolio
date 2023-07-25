@@ -38,9 +38,10 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color:#cfe0c3;
+    color: #cfe0c3;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 25px;
+    font-weight: bold;
     position: relative;
 }
 nav ul li a::after{
@@ -60,18 +61,119 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 80px;
 }
+
+/* --------------------about----------------- */
+#about{
+    padding: 80px 50px;
+}
+
+.row{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.about-col-1{
+    flex-basis:38%
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-col-2{
+    margin-top: 70px;
+    flex-basis: 57%
+}
+
+.about-col-2 .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #cfe0c3;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-titles .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #40798c;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .25s;
+}
+
+.tab-links:hover::after{
+    width:75%;
+}
+
+.tab-links.active-link::after{
+    width: 75%;
+}
+
+.tab-links.active-link:hover::after{
+    width: 75%;
+}
+
+.tab-contents{
+    margin-top: 40px;
+    display: none;
+}
+
+.tab-contents h3{
+    font-size:30px;
+}
+
+.tab-contents .list{
+    font-size: 22px;
+}
+
+.tab-contents .list li{
+    list-style: none;
+    margin: 25px 0;
+}
+.tab-contents .list .nested-list li {
+    list-style: circle inside none;
+    margin: 5px 0px;
+}
+
+.tab-contents .list li span{
+    font-size: 18;
+    color: #70a9a1;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
 
 
 /* colors
 #1f363d - dark grey
 #40798c - blue
 70a9a1 - teal
-9ec1a3 - green
+1aa172 - green
 cfe0c3 - pale green
 */

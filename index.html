@@ -24,6 +24,92 @@
                 </div>
             </div>
         </div>
+        <!-----------------------about -------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/brown.JPG" class="brown">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
+                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
+                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
+                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
+                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            </div>
+                            <div>
+                                <div class="tab-contents active-tab" id="education">
+                                    <h3>Georgia Institute of Technology</h3>
+                                    <ul class="list">
+                                        <li><span>Degree (In Progress)</span><br>Computer Science B.S.</li>
+                                        <li><span>Classification</span><br>Sophomore</li>
+                                        <li><span>Antipcated Graduation</span><br>2026</li>
+                                        <li><span>Threads</span>
+                                            <ul class="nested-list">
+                                                <li>Modeling and Simulation</li>
+                                                <li>Infonetworks</li>
+                                            </ul>
+                                        </li>
 
+                                    </ul>
+                                    <!-- <ul>
+                                        <li><span>Skill1</span><br>1Desc</li>
+                                        <li><span>Skill2</span><br>2Desc</li>
+                                        <li><span>Skill3</span><br>3Desc</li>
+
+                                    </ul> -->
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                    <ul class="list">
+                                        <li><span>2023</span><br>Cloud Software Engineering Intern at Lexmark International</li>
+                                        <li><span>2019-2020</span><br>experience</li>
+                                        <li><span>2018</span><br>experience</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="skills">
+                                    <ul class="list">
+                                        <li><span>Languages</span>
+                                            <ul class="nested-list">
+                                                <li>Java</li>
+                                                <li>Python</li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Clifton Strengths</span>
+                                            <ul class="nested-list">
+                                                <li>Achiever</li>
+                                                <li>Learner</li>
+                                                <li>Comptition</li>
+                                                <li>Individualization</li>
+                                                <li>Futuristic</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
     </body>
 </html>
