@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1f363d;
+    color: #cfe0c3;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* change this pic at some points */
+    background-image: url(images/green.JPG);
+    background-size: contain;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 10px 2%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 75px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color:#cfe0c3;
+    text-decoration: none;
+    font-size: 21px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #40798c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+}
+
+
+/* colors
+#1f363d - dark grey
+#40798c - blue
+70a9a1 - teal
+9ec1a3 - green
+cfe0c3 - pale green
+*/
