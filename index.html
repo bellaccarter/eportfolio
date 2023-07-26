@@ -11,14 +11,14 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li> 
-                        <li><a href="#">About</a></li> 
-                        <li><a href="#">Projects</a></li> 
-                        <li><a href="#">Contact</a></li> 
-                        <i class="fa-solid fa-xmark"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li> 
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#projects">Projects</a></li> 
+                        <li><a href="#contact">Contact</a></li> 
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
-                    <i class="fa-solid fa-bars" id="bars"></i>
+                    <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Computer Science Student</p>
@@ -163,6 +163,16 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
         }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-100"
+        }
+
     </script>
     </body>
 </html>
