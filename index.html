@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bella Carter Portfolio</title>
         <link rel="stylesheet" href="style.css"></link>
         <script src="https://kit.fontawesome.com/72ed773a5f.js" crossorigin="anonymous"></script>
@@ -11,13 +11,14 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="images/Georgia-Tech-Logo.png" class="logo">
                     <ul>
                         <li><a href="#">Home</a></li> 
                         <li><a href="#">About</a></li> 
-                        <li><a href="#">Portfolio</a></li> 
+                        <li><a href="#">Projects</a></li> 
                         <li><a href="#">Contact</a></li> 
+                        <i class="fa-solid fa-xmark"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" id="bars"></i>
                 </nav>
                 <div class="header-text">
                     <p>Computer Science Student</p>
@@ -35,65 +36,58 @@
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>
-                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
-                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
-                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
-                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
-                            Text about me fill in later. Text about me fill in later. Text about me fill in later. Text about me fill in later.  <br>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            text text text text text text.text text text text text text.text text text text text text.text text text text text text.
+                            text text text text text text.text text text text text text.text text text text text text.text text text text text text.
+                            text text text text text text.text text text text text text.text text text text text text.text text text text text text.
+                            text text text text text text.text text text text text text.text text text text text text.text text text text text text.
+                        </p> 
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div>
+                            <div class="tab-contents active-tab" id="education">
+                                <h3>Georgia Institute of Technology</h3>
+                                <ul class="list">
+                                    <li><span>Degree (In Progress)</span><br>Computer Science B.S.</li>
+                                    <li><span>Classification</span><br>Sophomore</li>
+                                    <li><span>Antipcated Graduation</span><br>2026</li>
+                                    <li><span>Threads</span>
+                                        <ul class="nested-list">
+                                            <li>Modeling and Simulation</li>
+                                            <li>Infonetworks</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
                             </div>
-                            <div>
-                                <div class="tab-contents active-tab" id="education">
-                                    <h3>Georgia Institute of Technology</h3>
-                                    <ul class="list">
-                                        <li><span>Degree (In Progress)</span><br>Computer Science B.S.</li>
-                                        <li><span>Classification</span><br>Sophomore</li>
-                                        <li><span>Antipcated Graduation</span><br>2026</li>
-                                        <li><span>Threads</span>
-                                            <ul class="nested-list">
-                                                <li>Modeling and Simulation</li>
-                                                <li>Infonetworks</li>
-                                            </ul>
-                                        </li>
-
-                                    </ul>
-                                    <!-- <ul>
-                                        <li><span>Skill1</span><br>1Desc</li>
-                                        <li><span>Skill2</span><br>2Desc</li>
-                                        <li><span>Skill3</span><br>3Desc</li>
-
-                                    </ul> -->
-                                </div>
-                                <div class="tab-contents" id="experience">
-                                    <ul class="list">
-                                        <li><span>2023</span><br>Cloud Software Engineering Intern at Lexmark International</li>
-                                        <li><span>2019-2020</span><br>experience</li>
-                                        <li><span>2018</span><br>experience</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-contents" id="skills">
-                                    <ul class="list">
-                                        <li><span>Languages</span>
-                                            <ul class="nested-list">
-                                                <li>Java</li>
-                                                <li>Python</li>
-                                            </ul>
-                                        </li>
-                                        <li><span>Clifton Strengths</span>
-                                            <ul class="nested-list">
-                                                <li>Achiever</li>
-                                                <li>Learner</li>
-                                                <li>Competition</li>
-                                                <li>Individualization</li>
-                                                <li>Futuristic</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </p>
+                            <div class="tab-contents" id="experience">
+                                <ul class="list">
+                                    <li><span>2023</span><br>Cloud Software Engineering Intern at Lexmark International</li>
+                                    <li><span>2019-2020</span><br>experience</li>
+                                    <li><span>2018</span><br>experience</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="skills">
+                                <ul class="list">
+                                    <li><span>Languages</span>
+                                        <ul class="nested-list">
+                                            <li>Java</li>
+                                            <li>Python</li>
+                                        </ul>
+                                    </li>
+                                    <li><span>Clifton Strengths</span>
+                                        <ul class="nested-list">
+                                            <li>Achiever</li>
+                                            <li>Learner</li>
+                                            <li>Competition</li>
+                                            <li>Individualization</li>
+                                            <li>Futuristic</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -129,7 +123,7 @@
 <!--------------------------------------contact----------------------------------------------------->   
         <div id="contact">
             <div class="container">
-                <div class="row">
+                <div class="row row2">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
                         <p><i class="fa-regular fa-paper-plane"></i>bellacarter@gatech.edu</p>
@@ -146,12 +140,11 @@
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit">Submit</button>
+                            <button type="submit" class="btn btn2">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
-
         </div>
 
 

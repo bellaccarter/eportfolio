@@ -29,14 +29,15 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo{
-    height: 75px;
-}
 nav ul li{
     display:inline-block;
     list-style: none;
     margin: 10px 30px;
 }
+
+/* nav ul{
+    position: fixed;
+} */
 nav ul li a{
     color: #cfe0c3;
     text-decoration: none;
@@ -70,12 +71,13 @@ nav ul li a:hover::after{
 
 /* --------------------about----------------- */
 #about{
-    padding: 80px 50px;
+    padding: 80px 20px;
 }
 
 .row{
     display: flex;
-    white-space: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -84,7 +86,9 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 100%;
+    /* flex-basis: 32%;  */
+    /* height: 100vh; */
+    width: 100%; 
     border-radius: 20px;
 }
 
@@ -167,7 +171,7 @@ nav ul li a:hover::after{
 
 /* ----------------------projects and resume-------------------- */
 #projects{
-    padding: 100px 0px;
+    padding: 100px 30px;
     /* margin-left: 25px; */
 
 }
@@ -245,6 +249,7 @@ nav ul li a:hover::after{
     font-size: 20px;
     color: #adbba4;
     margin-top: 30px;
+    margin-right: 100px;
 }
 
 .contact-right{
@@ -276,13 +281,93 @@ nav ul li a:hover::after{
 }
 
 .btn.btn2{
+    background: #1f363d;
     margin-top: 30px;
 }
 .btn.btn2:hover{
     background: #cfe0c3;
-
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border: 0;
+    outline:none;
+    background: #2f4952;
+    padding: 15px;
+    margin-top: 22px;;
+    color: #adbba4;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
+/* ------------------------------css for small screens----------------------------- */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    #header{
+        height: 100%;
+        background-image: url(images/green.JPG);
+    }
+    .header-text{
+        margin-top: 85%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        float: right;
+        display: block;
+        font-size: 25px;
+    }
+    /* #bars{
+        padding:0px 325px;
+    } */
+    nav ul{
+        font-size: 10px;
+        background: #40798c;
+        position: fixed;
+        top: 0;
+        right: -100px;
+        width: 100;
+        height: 100%;
+        padding-top: 50px;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 20px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        /* position: absolute; */
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:24px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .row.row2{
+        /* justify-content: center; */
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 
 
