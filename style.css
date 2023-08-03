@@ -21,6 +21,7 @@ body{
     height: 100%;
     background-position: right;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
 .container{
     padding: 10px 2%;
@@ -35,7 +36,7 @@ nav{
 nav ul li{
     display:inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 20px;
 }
 
 /* nav ul{
@@ -314,6 +315,12 @@ form .btn2{
     margin-top: 20px;
 }
 
+#msg{
+    color: #70a9a1;
+    margin-top: -30px;
+    display: block;
+}
+
 /* ------------------------------css for small screens----------------------------- */
 nav .fa-solid{
     display: none;
@@ -412,6 +419,24 @@ nav .fa-solid{
         margin-top: 7px;
         margin-bottom: 15px;
     }
+    .tab-contents .list{
+        font-size: 18px;
+    }
+    
+    .tab-contents .list li{
+        list-style: none;
+        margin: 25px 0;
+    }
+    .tab-contents .list .nested-list li {
+        list-style: circle inside none;
+        margin: 5px 0px;
+    }
+    
+    .tab-contents .list li span{
+        font-size: ;
+        color: #70a9a1;
+    }
+    
 
 
 }
